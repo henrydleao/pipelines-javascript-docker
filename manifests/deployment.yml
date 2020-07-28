@@ -3,6 +3,9 @@ kind: Deployment
 metadata:
   name: henrydleaopipelinesjavascriptdocker 
 spec:
+  selector:
+    matchLabels:
+      app: henrydleaopipelinesjavascriptdocker
   replicas: 1
   template:
     metadata:
